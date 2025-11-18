@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # 🔑 Configura tu API Key de OpenAI (usa variable de entorno si prefieres)
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY") or "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")
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY") or "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")
 
 
 @app.route('/')
@@ -68,3 +68,4 @@ def identificar_ave():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
